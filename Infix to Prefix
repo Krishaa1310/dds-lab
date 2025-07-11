@@ -1,0 +1,37 @@
+Algorithm to perform Infix to postfix operation
+a.	If symbol is an operand
+-Print that symbol onto the screen.
+b.   If symbol is a left parenthesis
+-Push it on the stack.
+c.   If symbol is a right parenthesis
+-Pop all the operation from the stack upto first left parenthesis and print them on the screen.
+  Discard the left & right parenthesis.
+
+d.   If the symbol is an operator-
+      if the precedence of the operators in the stack are greater or equal to the current operator then pop the operators out of the stack 7 and print onto the screen 7 and push he current operator in the stack.
+
+Else:
+Push the current operator onto the stack.
+
+3*(5-2)+1
+
+Precedence Order
+
+Parenthesis-{}, (), []
+Exponential Notation-^
+Multiplication & Division-*, /
+Addition & Subtraction-+, -
+
+Asociativity
+*, / -Left to Right
++ - -Left to Right
+^ -Right to Left
+
+Infix to Prefix
+
+Infix - <operand><operator><operand> A+B
+Prefix - <operand><operator><operand> +AB
+Postfix - <operand><operator><operand> +AB
+
+
+
