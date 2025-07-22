@@ -1,0 +1,20 @@
+int main() {
+    enqueue(10);
+    enqueue(20);
+    enqueue(30);
+    display();
+
+    peek();            // Show front element
+    search(20);        // Should find it
+    search(40);        // Should not find it
+
+    dequeue();
+    display();
+
+    peek();
+    dequeue();
+    dequeue();
+    dequeue(); // Testing underflow
+
+    return 0;
+}
